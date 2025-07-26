@@ -1,0 +1,26 @@
+.componant-bg{
+  height: 70vh;
+  position: relative;
+  background-color: rgb(37, 2, 2);
+}
+h1{
+  font-size: 60px;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.line {
+  flex: 1;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 10px;
+  border-radius: 2px;
+}
+
+.icon {
+  font-size: 20px;
+}

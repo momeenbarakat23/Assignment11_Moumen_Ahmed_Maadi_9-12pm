@@ -1,0 +1,84 @@
+<section class="">
+  <div
+    class="d-flex align-items-center h-100 flex-column gap-3 justify-content-center"
+  >
+    <div class="text-center">
+      <h1 class="">portfolio component</h1>
+      <div class="divider">
+        <span class="line text-bg-dark"></span>
+        <i class="fa-solid fa-star icon"></i>
+        <span class="line text-bg-dark"></span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 popup-img">
+          <div class="card" (click)="getImg($event); openPopUp()">
+            <div class="image-container">
+              <img src="poert1.png"  alt="house" />
+              <div class="overlay"  valu="poert1.png">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 popup-img">
+          <div class="card" (click)="getImg($event)" (click)="openPopUp()">
+            <div class="image-container">
+              <img  src="port2.png" alt="house" />
+              <div class="overlay" valu="port2.png">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 popup-img">
+          <div class="card" (click)="getImg($event)" (click)="openPopUp()">
+            <div class="image-container">
+              <img  src="port3.png" alt="house" />
+              <div class="overlay" valu="port3.png">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 popup-img">
+          <div class="card" (click)="getImg($event)" (click)="openPopUp()">
+            <div class="image-container">
+              <img  src="poert1.png"  alt="house" />
+              <div class="overlay" valu="poert1.png">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 popup-img">
+          <div class="card" (click)="getImg($event)" (click)="openPopUp()">
+            <div class="image-container">
+              <img  src="port2.png" alt="house" />
+              <div class="overlay" valu="port2.png">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 popup-img">
+          <div class="card" (click)="getImg($event)" (click)="openPopUp()">
+            <div class="image-container" >
+              <img  src="port3.png" alt="house" />
+              <div class="overlay" valu="port3.png">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section (click)="removePopUp()" class="popup d-none" id="popup">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <img class="w-25" [src]="popupImg" alt="" />
+  </div>
+</section>
